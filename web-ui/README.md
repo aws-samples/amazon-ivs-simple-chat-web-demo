@@ -20,7 +20,7 @@ To get the web demo running, follow these instructions:
 
 The following entries in `src/config.js` (inside the web-ui project directory) are used to configure the video stream and chat websocket
 
-* `DEFAULT_VIDEO_STREAM`
+* `PLAYBACK_URL`
   - Default video stream to play inside the video player
 
 * `CHAT_WEBSOCKET`

@@ -143,7 +143,7 @@ class Chat extends Component {
         </header>
         <div className="main full-width full-height chat-container">
           <div className="content-wrapper mg-2">
-          <VideoPlayer setMetadataId={this.setMetadataId} videoStream={config.DEFAULT_VIDEO_STREAM} />
+          <VideoPlayer setMetadataId={this.setMetadataId} videoStream={config.PLAYBACK_URL} />
             <div className="col-wrapper">
               <div className="chat-wrapper pos-absolute pd-t-1 top-0 bottom-0">
                 <div className="messages">

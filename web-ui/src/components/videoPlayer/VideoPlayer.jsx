@@ -77,7 +77,7 @@ class VideoPlayer extends Component {
 
     // Setup stream and play
     player.setAutoplay(true);
-    player.load(config.DEFAULT_VIDEO_STREAM);
+    player.load(config.PLAYBACK_URL);
     player.setVolume(0.5);
   }
 
