@@ -10,28 +10,6 @@
   background: #000;
 }
 
-.video-container {
-  display: block;
-  width: var(--video-width);
-  height: fit-content;
-  background: #000;
-}
-
-.video-metadata-container {
-  font-family: var(--font-mono);
-  z-index: 999;
-  right: 2rem;
-  top: 2rem;
-}
-
-.video-metadata-item {
-  font-weight: 400;
-  font-size: .9rem;
-  height: 100%;
-  position: relative;
-  top: 0;
-}
-
 @media (max-width: 480px) { /* Smaller Screens */
   :root {
     --video-width: 100%;
