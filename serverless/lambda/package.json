@@ -1,0 +1,11 @@
+{
+  "name": "simple-chat",
+  "version": "1.0.0",
+  "description": "onConnect, sendMessage and onDisconnect example for WebSockets on API Gateway",
+  "main": "src/app.js",
+  "author": " ",
+  "license": " ",
+  "dependencies": {
+    "aws-sdk": "^2.690.0"
+  }
+}

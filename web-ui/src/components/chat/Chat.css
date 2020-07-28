@@ -1,0 +1,91 @@
+/* Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved. */
+/* SPDX-License-Identifier: MIT-0 */
+
+:root {
+  --section-max-width: auto;
+  --color--primary:  #000;
+  --color-bg-base: #F7F7F7;
+  --color-bg-modal-overlay: rgba(185,185,192,.9);
+}
+
+.main {
+  height: calc(100vh - var(--header-height));
+}
+
+.content-wrapper {
+  max-width: 1280px;
+  background: #FFF;
+  box-shadow: 0 6px 30px rgba(0,0,0,.08);
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: stretch;
+  margin: 0 auto;
+  top: calc(50% - 250px);
+}
+
+.player-wrapper {
+  width: 100%;
+  background: black;
+  position: relative;
+  overflow: hidden;
+}
+
+.aspect-spacer {
+  padding-bottom: 56.25%;
+}
+
+.el-player {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background: #000;
+}
+
+.col-wrapper {
+  width: 400px;
+  background: #FFF;
+  flex-shrink: 0;
+  align-self: stretch;
+  position: relative;
+}
+
+.chat-wrapper {
+  left: 1rem;
+  right: 1rem;
+  overflow: hidden;
+}
+
+.chat-wrapper .messages {
+  height: 100%;
+  width: 100%;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.composer button.btn {
+  margin-bottom: 0;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.btn:disabled {
+  opacity: .5;
+  background: var(--color-bg-button-primary-default);
+}
+
+@media (max-width: 1080px) {
+  .content-wrapper {
+    flex-direction: column;
+    top: 0;
+  }
+  .col-wrapper {
+    width: 100%;
+    height: 420px;
+  }
+}
