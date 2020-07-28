@@ -2,6 +2,9 @@
 
 A demo web application intended as an educational tool for demonstrating how you can build a very simple Chat backend. In conjunction with Amazon IVS, it can be used to build a compelling customer experience for live streams with chat use-cases.
 
+<img src="simple-chat-demo.png" alt="Amazon IVS Simple Chat demo" />
+
+
 **This project is intended for education purposes only and not for production usage.**
 
 This is a serverless web application, leveraging [Amazon IVS](https://aws.amazon.com/ivs/), [AWS Lambda](https://aws.amazon.com/lambda/), and WebSockets. The web user interface is a [single page application](https://en.wikipedia.org/wiki/Single-page_application) built using [responsive web design](https://en.wikipedia.org/wiki/Responsive_web_design) frameworks and techniques, producing a native app-like experience tailored to the user's device.
