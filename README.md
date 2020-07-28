@@ -1,6 +1,6 @@
 # Amazon IVS Simple Chat demo
 
-A demo web application intended as an educational tool for demonstrating how Amazon IVS, in conjunction with other AWS services, can be used to build a compelling customer experience for live video with chat use-cases.
+A demo web application intended as an educational tool for demonstrating how you can build a very simple Chat backend. In conjunction with Amazon IVS, it can be used to build a compelling customer experience for live streams with chat use-cases.
 
 **This project is intended for education purposes only and not for production usage.**
 
@@ -11,15 +11,11 @@ The demo showcases how you can implement a simple chat client next to an Amazon 
 
 ***IMPORTANT NOTE:** Deploying this demo application in your AWS account will create and consume AWS resources, which will cost money.*
 
-To get the demo running in your own AWS account, follow these instructions.
+This demo is comprised of two parts: `serverless` (the demo backend) and `web-ui` (the demo frontend).
 
 1. If you do not have an AWS account, please see [How do I create and activate a new Amazon Web Services account?](https://aws.amazon.com/premiumsupport/knowledge-center/create-and-activate-aws-account/)
 2. Log into the [AWS console](https://console.aws.amazon.com/) if you are not already. Note: If you are logged in as an IAM user, ensure your account has permissions to create and manage the necessary resources and components for this application.
-3. Follow the instructions for deploying to AWS or running locally.
-
-### Deploying to AWS or running locally
-* This demo is comprised of two parts: `serverless` (the demo backend) and `web-ui` (the demo frontend)
-* To run the demo's backend services locally or on your AWS account, follow the [detailed instructions](./serverless/README.md) to get started.
+3. [Test locally or deploy](./serverless/README.md) to your AWS account.
 
 ## Known issues and limitations
 * The application was written for demonstration purposes and not for production use.

@@ -1,6 +1,6 @@
-# Local Deployment Instructions for Simple Chat Backend
+# Deployment instructions for the Simple Chat backend
 
-Deploy a simple chat back-end with AWS Lambda and WebSockets.
+Deploy a simple chat backend with AWS Lambda and WebSockets.
 
 ## Prerequisites 
 

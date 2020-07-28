@@ -1,4 +1,4 @@
-# Simple Chat Web Demo
+# Simple Chat Web Demo frontend
 
 ## Prerequisites 
 
@@ -18,12 +18,12 @@ To get the web demo running, follow these instructions:
 
 ## Configuration
 
-The following entries in src\config.js (inside the web-ui project directory) are used to configure the video stream and chat websocket
+The following entries in `src/config.js` (inside the web-ui project directory) are used to configure the video stream and chat websocket
 
-* DEFAULT_VIDEO_STREAM
+* `DEFAULT_VIDEO_STREAM`
   - Default video stream to play inside the video player
 
-* CHAT_WEBSOCKET
+* `CHAT_WEBSOCKET`
   - Default WebSocket server URL
 
 ## Limitations
@@ -68,7 +68,6 @@ See the section about [deployment](https://create-react-app.dev/docs/deployment/
 ## Learn More
 
 You can learn more in the [Create React App documentation](https://create-react-app.dev/docs/getting-started/).
-
 To learn React, check out the [React documentation](https://reactjs.org/).
 
 ### Code Splitting
