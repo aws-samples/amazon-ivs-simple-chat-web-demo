@@ -84,6 +84,7 @@
   --header-height: 50px;
   --btn-floating-size: 56px;
   --btn-floating-icon-size: 40px;
+  --modal-min-width: 480px;
 
   /* Light theme color assignment */
   --color-text-base: var(--color-black);
@@ -158,6 +159,7 @@
     --header-height: 50px;
     --btn-floating-size: 56px;
     --btn-floating-icon-size: 40px;
+    --modal-min-width: 320px;
 
     --grid-2-columns: 1fr;
     --grid-3-columns: 1fr;
@@ -637,12 +639,13 @@ header h1 {
 
 .modal__el {
   max-width: 570px;
+  min-width: var(--modal-min-width);
   position: relative;
   z-index: 2;
   background: var(--color-bg-modal);
   display: flex;
   flex-direction: column;
-  padding: 2rem;
+  padding: 3rem;
 }
 
 .modal__overlay {
