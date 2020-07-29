@@ -10,7 +10,7 @@ Deploy a simple chat backend with AWS Lambda and WebSockets.
 
 ## Deploy from your local machine
 
-Before you start, run below command to make sure you're in the correct AWS account and configured.
+Before you start, run the following command to make sure you're in the correct AWS account (or configure as needed):
 ```
 aws configure
 ```
