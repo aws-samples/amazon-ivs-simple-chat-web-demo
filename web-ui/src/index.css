@@ -927,7 +927,7 @@ input.rounded {
 }
 
 .chat-line .username::after {
-  content: ' ';
+  content: "\00a0 ";
 }
 
 .composer {
