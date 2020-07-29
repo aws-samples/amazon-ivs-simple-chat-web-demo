@@ -1,6 +1,6 @@
 {
   "short_name": "IVS-Simple Chat Web Demo",
-  "name": "A demo web application intended as an educational tool for demonstrating how Amazon IVS, in conjunction with other AWS services",
+  "name": "A demo web application intended as an educational tool for demonstrating how you can build a very simple live Chat experience, in conjunction with Amazon IVS.",
   "icons": [
     {
       "src": "favicon.ico",
