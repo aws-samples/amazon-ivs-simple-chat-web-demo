@@ -1,5 +1,5 @@
 {
-  "name": "web-ecommerce",
+  "name": "simple-chat-demo",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -30,5 +30,5 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "/simple-chat"
+  "homepage": "/"
 }
