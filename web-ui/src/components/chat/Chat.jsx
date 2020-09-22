@@ -29,11 +29,11 @@ class Chat extends Component {
   componentDidMount() {
     const connection = new WebSocket(config.CHAT_WEBSOCKET);
     connection.onopen = (event) => {
-      console.log("WebSocket is open now.");
+      console.log("WebSocket is now open.");
     };
 
     connection.onclose = (event) => {
-      console.log("WebSocket is closed now.");
+      console.log("WebSocket is now closed.");
     };
 
     connection.onerror = (event) => {
