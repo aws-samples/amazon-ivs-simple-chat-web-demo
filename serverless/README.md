@@ -49,9 +49,9 @@ sam deploy \
 
 On completion, save the following values:
 1. `WebSocketURI`, used in the demo configuration file (`config.js`), to send/receive chat messages
-2. `ChannelIngestEndpoint`, used in your broadcasting software (you will need to prepend the value with `rtmps://` and append `:443/app/` at the end)
-3. `StreamKey`, used in your broadcasting software
-4. `ChannelPlaybackUrl`, used in the demo configuration file (`config.js`), to load your stream in the Amazon IVS player
+2. `ChannelIngestEndpoint`, to be used in your broadcasting software (ex. OBS)
+3. `StreamKey`, to be used in your broadcasting software (ex. OBS)
+4. `ChannelPlaybackUrl`, used in the demo configuration file (`config.js`), to load your Amazon IVS stream in the video player
 
 
 If needed, to retrieve Cloudformation stack outputs again, run below command:
