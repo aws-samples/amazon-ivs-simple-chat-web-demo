@@ -1,6 +1,6 @@
-# Deployment instructions for the Simple Chat backend and Amazon IVS channel
+# Deployment instructions for the demo backend and Amazon IVS channel
 
-Deploy the simple chat backend, and create a new Amazon IVS channel using AWS CloudFormation.
+Deploy the simple chat backend, create a new Amazon IVS channel using AWS CloudFormation, and retrieve everything you need to configure the demo.
 
 ## Prerequisites 
 
@@ -89,7 +89,7 @@ connected (press CTRL+C to quit)
 < hello world
 ```
 
-### 5. Deploy Simple Chat Web UI Demo
+### 5. Configure the Simple Chat demo frontend
 
 Follow the [detailed instructions](../web-ui) on how to get the frontend up and running.
 
