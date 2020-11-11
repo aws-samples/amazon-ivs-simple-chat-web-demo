@@ -1,6 +1,6 @@
-# Deployment instructions for the Simple Chat backend
+# Deployment instructions for the Simple Chat backend and Amazon IVS channel
 
-Deploy a simple chat backend with AWS Lambda and WebSockets.
+Deploy the simple chat backend, and create a new Amazon IVS channel using AWS CloudFormation.
 
 ## Prerequisites 
 
@@ -46,9 +46,15 @@ sam deploy \
 --stack-name <my-stack-name> \
 --capabilities CAPABILITY_IAM
 ```
-On completion, copy the value of `WebSocketURI` as you will need it later for your client.
 
-To retrieve Cloudformation stack outputs again, run below command:
+On completion, save the following values:
+1. `WebSocketURI`, used in the demo configuration file (`config.js`), to send/receive chat messages
+2. `ChannelIngestEndpoint`, used in your broadcasting software (you will need to prepend the value with `rtmps://` and append `:443/app/` at the end)
+3. `StreamKey`, used in your broadcasting software
+4. `ChannelPlaybackUrl`, used in the demo configuration file (`config.js`), to load your stream in the Amazon IVS player
+
+
+If needed, to retrieve Cloudformation stack outputs again, run below command:
 ```
 aws cloudformation describe-stacks --stack-name <my-stack-name> 
 
@@ -56,7 +62,7 @@ aws cloudformation describe-stacks \
 --stack-name <my-stack-name> --query 'Stacks[].Outputs'
 ```
 
-### 4. Testing the chat API
+### 4. (optional) Testing the chat API
 
 To test the WebSocket API, you can use [wscat](https://github.com/websockets/wscat), an open-source command line tool.
 
@@ -85,9 +91,9 @@ connected (press CTRL+C to quit)
 
 ### 5. Deploy Simple Chat Web UI Demo
 
-Follow these [detailed instructions](../web-ui) on how to get the UI running.
+Follow the [detailed instructions](../web-ui) on how to get the frontend up and running.
 
-## Clean Up
+### 6. (optional) Clean Up
 
 1. Delete Cloudformation stack:
 ```

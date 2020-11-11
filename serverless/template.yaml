@@ -1,6 +1,6 @@
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
-Description: Simple Chat
+Description: Amazon IVS Simple Chat demo
 
 Parameters:
   TableName:
@@ -13,6 +13,17 @@ Parameters:
     ConstraintDescription: 'Required. Can be characters and underscore only. No numbers or special characters allowed.'
 
 Resources:
+  # Amazon IVS
+  Channel:
+    Type: AWS::IVS::Channel
+    Properties:
+      Name: simple-chat-demo
+  StreamKey:
+    Type: AWS::IVS::StreamKey
+    Properties:
+      ChannelArn: !Ref Channel
+
+  # Chat serverless backend
   SimpleChatWebSocket:
     Type: AWS::ApiGatewayV2::Api
     Properties:
@@ -183,3 +194,15 @@ Outputs:
   WebSocketURI:
     Description: "The WSS Protocol URI to connect to"
     Value: !Join [ '', [ 'wss://', !Ref SimpleChatWebSocket, '.execute-api.',!Ref 'AWS::Region','.amazonaws.com/',!Ref 'Stage'] ]
+  ChannelArn:
+    Description: "Amazon IVS channel ARN:"
+    Value: !Ref Channel
+  ChannelIngestEndpoint:
+    Description: "Amazon IVS ingest server:"
+    Value: !Join [ '', [ 'rtmps://', !GetAtt Channel.IngestEndpoint, ':443/app/'] ]
+  StreamKey:
+    Description: "Amazon IVS stream key:"
+    Value: !GetAtt StreamKey.Value
+  ChannelPlaybackUrl:
+    Description: "Amazon IVS playback URL:"
+    Value: !GetAtt Channel.PlaybackUrl

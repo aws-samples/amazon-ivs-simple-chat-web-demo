@@ -10,7 +10,7 @@ A demo web application intended as an educational tool for demonstrating how you
 This is a serverless web application, leveraging [Amazon IVS](https://aws.amazon.com/ivs/), [AWS Lambda](https://aws.amazon.com/lambda/), and WebSockets. The web user interface is a [single page application](https://en.wikipedia.org/wiki/Single-page_application) built using [responsive web design](https://en.wikipedia.org/wiki/Responsive_web_design) frameworks and techniques, producing a native app-like experience tailored to the user's device.
 
 
-The demo showcases how you can implement a simple chat client next to an Amazon IVS stream. Users are asked to enter their name the first time they begin chatting. Messages are sent in the format `<Username>` `<Message>` as part of each chat "bubble". Users can send plain text messages, text links, and emojis. Chat messages have a character limit of 510 characters.
+The demo showcases how you can implement a simple chat client next to an Amazon IVS stream. Viewers are asked to enter their name the first time they begin chatting. Messages are sent in the format `<Username>` `<Message>` as part of each chat "bubble". Chat users can send plain text messages, text links, and emojis. Chat messages have a character limit of 510 characters.
 
 ## Getting Started
 
@@ -20,7 +20,7 @@ This demo is comprised of two parts: `serverless` (the demo backend) and `web-ui
 
 1. If you do not have an AWS account, please see [How do I create and activate a new Amazon Web Services account?](https://aws.amazon.com/premiumsupport/knowledge-center/create-and-activate-aws-account/)
 2. Log into the [AWS console](https://console.aws.amazon.com/) if you are not already. Note: If you are logged in as an IAM user, ensure your account has permissions to create and manage the necessary resources and components for this application.
-3. [Test locally or deploy](./serverless/README.md) to your AWS account.
+3. [Test locally or deploy](./serverless/README.md) to your AWS account. The CloudFormation template will automate the serverless backend and Amazon IVS channel creation.
 
 ## Known issues and limitations
 * The application was written for demonstration purposes and not for production use.

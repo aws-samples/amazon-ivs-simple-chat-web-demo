@@ -18,13 +18,13 @@ To get the web demo running, follow these instructions:
 
 ## Configuration
 
-The following entries in `src/config.js` (inside the web-ui project directory) are used to configure the video stream and chat websocket
+The following entries in `src/config.js` (inside the web-ui project directory) are used to configure the live video player and the chat websocket address. Both values will be made available to you when setting up the serverless backend using AWS CloudFormation. [Read more](../serverless).
 
 * `PLAYBACK_URL`
-  - Default video stream to play inside the video player
+  - Amazon IVS live video stream to play inside the video player
 
 * `CHAT_WEBSOCKET`
-  - Default WebSocket server URL
+  - WebSocket server address
 
 ## Limitations
 
