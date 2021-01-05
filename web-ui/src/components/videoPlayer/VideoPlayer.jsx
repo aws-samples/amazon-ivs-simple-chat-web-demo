@@ -19,7 +19,7 @@ class VideoPlayer extends Component {
 
   componentDidMount() {
     const mediaPlayerScript = document.createElement("script");
-    mediaPlayerScript.src = "https://player.live-video.net/1.1.2/amazon-ivs-player.min.js";
+    mediaPlayerScript.src = "https://player.live-video.net/1.2.0/amazon-ivs-player.min.js";
     mediaPlayerScript.async = true;
     mediaPlayerScript.onload = () => this.mediaPlayerScriptLoaded();
     document.body.appendChild(mediaPlayerScript);
