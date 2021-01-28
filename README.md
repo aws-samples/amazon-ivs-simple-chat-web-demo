@@ -34,7 +34,7 @@ Amazon Interactive Video Service (Amazon IVS) is a managed live streaming soluti
 * [API Reference](https://docs.aws.amazon.com/ivs/latest/APIReference/)
 * [Setting Up for Streaming with Amazon Interactive Video Service](https://aws.amazon.com/blogs/media/setting-up-for-streaming-with-amazon-ivs/)
 * [Learn more about Amazon IVS on IVS.rocks](https://ivs.rocks/)
-* [View more demos like this](https://ivs.rocks/)
+* [View more demos like this](https://ivs.rocks/examples)
 
 ## Security
 
