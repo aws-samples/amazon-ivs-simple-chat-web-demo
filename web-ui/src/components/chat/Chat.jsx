@@ -12,7 +12,6 @@ import SignIn from './SignIn';
 import './Chat.css';
 
 const Chat = () => {
-  const [metadataId, setMetadataId] = useState(null);
   const [showSignIn, setShowSignIn] = useState(false);
   const [username, setUsername] = useState('');
   const [message, setMessage] = useState('');
@@ -69,9 +68,7 @@ const Chat = () => {
     scrollToBottom();
   });
 
-
   const updateUsername = username => {
-    console.log('username!', username);
     setUsername(username);
     setShowSignIn(false);
     chatRef.current.focus()
@@ -132,7 +129,7 @@ const Chat = () => {
       </header>
       <div className="main full-width full-height chat-container">
         <div className="content-wrapper mg-2">
-        <VideoPlayer setMetadataId={setMetadataId} videoStream={config.PLAYBACK_URL} />
+        <VideoPlayer />
           <div className="col-wrapper">
             <div className="chat-wrapper pos-absolute pd-t-1 top-0 bottom-0">
               <div className="messages">
@@ -165,7 +162,6 @@ const Chat = () => {
       </div>
     </>
   )
-  
 }
 
 export default Chat;
