@@ -65,7 +65,7 @@ const VideoPlayer = () => {
       player.setVolume(0.5);
     }
     const mediaPlayerScript = document.createElement("script");
-    mediaPlayerScript.src = "https://player.live-video.net/1.7.0/amazon-ivs-player.min.js";
+    mediaPlayerScript.src = "https://player.live-video.net/1.8.0/amazon-ivs-player.min.js";
     mediaPlayerScript.async = true;
     mediaPlayerScript.onload = () => mediaPlayerScriptLoaded();
     document.body.appendChild(mediaPlayerScript);
