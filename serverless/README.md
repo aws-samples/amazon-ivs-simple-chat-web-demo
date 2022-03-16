@@ -100,12 +100,12 @@ Follow the [detailed instructions](../web-ui) on how to get the frontend up and 
 aws cloudformation delete-stack --stack-name <my-stack-name>
 ```
 
-3. Remove files in S3 bucket
+2. Remove files in S3 bucket
 ```
 aws s3 rm s3://<my-bucket-name> --recursive
 ```
 
-2. Delete S3 bucket
+3. Delete S3 bucket
 ```
 aws s3api delete-bucket --bucket <my-bucket-name> --region <my-region>
 ```
