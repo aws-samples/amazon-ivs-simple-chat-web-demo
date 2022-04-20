@@ -1,9 +1,7 @@
-# Amazon IVS Simple Chat demo
+# ⚠️ IMPORTANT ⚠️ This repository is no longer actively maintained and will be archived at the end of 2022
+## Amazon IVS Simple Chat demo
 
 A demo web application intended as an educational tool for demonstrating how you can build a very simple Chat backend. In conjunction with Amazon IVS, it can be used to build a compelling customer experience for live streams with chat use-cases.
-
-<img src="simple-chat-demo.png" alt="Amazon IVS Simple Chat demo" />
-
 
 **This project is intended for education purposes only and not for production usage.**
 
