@@ -1,4 +1,11 @@
 # ⚠️ IMPORTANT ⚠️ This repository is no longer actively maintained and will be archived at the end of 2022
+
+For a more scalable multi-platform solution using [Amazon IVS Chat](https://aws.amazon.com/ivs/features/chat), refer to the following repositories:
+
+* [Amazon IVS Chat Web Demo](https://github.com/aws-samples/amazon-ivs-chat-web-demo)
+* [Amazon IVS Chat iOS Demo](https://github.com/aws-samples/amazon-ivs-chat-for-ios-demo)
+* [Amazon IVS Chat Android Demo](https://github.com/aws-samples/amazon-ivs-chat-for-android-demo)
+
 ## Amazon IVS Simple Chat demo
 
 A demo web application intended as an educational tool for demonstrating how you can build a very simple Chat backend. In conjunction with Amazon IVS, it can be used to build a compelling customer experience for live streams with chat use-cases.
